@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>navbar</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#About">About</a></li>
+            <li class="topnav-right"><a href="#signin">Sign in</a></li>
+            <li class="topnav-right"><a href="#Signup">Sign up</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);"  onclick="dropdownMenu()">&#9776;
+            </a></li>
+        </ul>
+    </nav>
+    <div class="container" id="seciton-1-gradient">
+        <div class="row">
+            <div class="col-6" > 
+                <div class="leftside-col" >
+                    <h1 class="large">crazy Radness</h1>
+                    <h1 class="large">made for devslopes</h1>
+                </div>
+                <form action="">
+                    <div class="leftside-col">
+                        <h2>Username</h2><input class="inputbox" type="text" placeholder="Username">
+                        <h2>Password</h2><input class="inputbox" type="text" placeholder="Password">
+                    <button type="submit" >submit</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-6"> 
+                <div class="rightside-col">
+                <div class="videocontainer">
+                    <iframe width="450" height="300" src="https://www.youtube.com/embed/d4Zb4f4rnL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <header>
+        <h1 class="section2header">The standards of Awesomeness</h1>
+     </header>
+     <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="gkfinal.png" alt="">
+                    </div>
+                    <label for="">chat with me</label>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Temporibus fugiat debitis consequatur 
+                        </p>
+
+                </div>
+
+            </div>
+
+        
+
+
+     
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="gkfinal.png" alt="">
+                    </div>
+                    <label for="">learn to Code</label>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Temporibus fugiat debitis consequatur 
+                        </p>
+
+                </div>
+
+            </div>
+
+
+     
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="gkfinal.png" alt="">
+                    </div>
+                    <label for="">Build an empire</label>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Temporibus fugiat debitis consequatur 
+                        </p>
+
+                </div>
+
+            </div>
+
+        
+        </div>
+        <div  class="row">
+            <div class="col-12">
+                <button class="learnmore">Learn more</button>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+
+    <div class="container">
+     <div class="row">
+        <div class="col-7">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur
+                     adipisicing elit. Ea libero
+                     voluptatem excepturi molestias aut 
+                     maiores, dicta non nihil 
+                    veniam dolor similique asperiores 
+                    molestiae, suscipit 
+                    accusantium ullam at sunt quod a.</p>
+            </article>
+        </div>
+        <div class="col-5">
+            <div class="slopeIcon">
+                <img src="gk.webp" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <footer class="foot">
+        <div class="row">
+            <div class="col-3" >
+                <h1>company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>blogs</li>
+                    <li>careers</li>
+                </ul>
+
+            </div>
+            <div class="col-3" >
+                <h1>company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>blogs</li>
+                    <li>careers</li>
+                </ul>
+
+            </div>
+            <div class="col-3" >
+                <h1>company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>blogs</li>
+                    <li>careers</li>
+                </ul>
+
+            </div>
+            <div class="col-3" >
+                <h1>company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>blogs</li>
+                    <li>careers</li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+     
+    
+
+
+
+
+
+    <script>
+        function dropdownMenu() {
+            var x = document.getElementById("dropdownClick");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+                /*change topnav to topnav.responsive */
+                /* adding space before responsive is important */
+            }
+            else{
+                x.className = "topnav";
+            }
+        }
+
+    </script>  
+   </body>
+</html>

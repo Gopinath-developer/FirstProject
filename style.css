@@ -1,0 +1,317 @@
+
+/* *** default **** */
+
+
+
+nav,header,footer {
+    display: block;
+}
+
+body {
+    line-height:0.5;
+    margin:0;
+}
+
+
+label {
+    font-size: 35px;
+    font-weight: 600;
+    
+}
+p {
+    font-size: 28px;
+    line-height: 1.2;;
+
+}
+article p{
+    font-size: 35px;
+    padding: 20px;
+}
+
+.container {
+    width:100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom:4%;
+
+}
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-12 {
+    width: 100%;
+}
+.col-6 {
+     width: 50%;
+    }
+.col-7 {
+    width:60%;
+}
+.col-5 {
+    width:40%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+.col-3 {
+    width:25%;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+
+/* *** nav bar *** */
+
+nav {
+    width: 100;
+    margin:0;
+}
+nav ul {
+    background-color: #97a489;
+    overflow: hidden; 
+    margin:0;
+    padding:0;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right{
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topnav li a:hover{
+    background-color: rgb(94, 233, 163);
+    color: #e6d9d9;
+    border-radius: 15px;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+/* *** custom styles *** */
+
+#seciton-1-gradient {
+    background: linear-gradient(#076DFF,#65a5ff) ;
+}
+
+div.box {
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0,0,0,1.5), 0 2px 3px 0 rgba(0,0,0,.1);
+    text-align: center;
+    border-radius: 7px;
+}
+div.slopeIcon img {
+    display:block;
+    margin: auto;
+    box-shadow: -2px -2px 5px 2px rgba(0,0,0,.15), 2px 2px 17px 2px rgba(0,0,0,1);
+
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color:#e9edf3;
+    background-color: blue;
+    padding: 15px 60px;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+   
+    
+}
+
+button.learnmore{
+    display:block;
+    margin: auto;
+   
+    text-decoration: none;
+}
+
+div.icon {
+    width: 100%;
+
+}
+
+
+div.leftside-col {
+    margin-left: 30%;
+
+}
+div.rightside-col {
+    margin-left: 15%;
+}
+    
+
+
+h1.large {
+    font-size: 50px;
+    color:whitesmoke;
+    margin: 0;
+    line-height:  70px;
+
+}
+
+h1.section2header {
+    font-size: 65px;
+    text-align: center;
+    line-height: 70px;
+}
+
+
+form h2{
+    color: #eadfdf;
+    
+
+}
+form button{
+    color: #eef0f3;
+    background-color: #65a5ff;
+    margin-left:20%;
+    margin-right: 15%;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+input[type="text"]{
+    font-size: 20px;
+    width:350px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+.videocontainer {
+    padding-right:20%;
+
+}
+
+footer.foot {
+    background-color: #666;
+}
+footer.foot h1{
+    color:white;
+    font-size: 35px;
+    margin-left: 10%;
+
+}
+footer.foot ul {
+    list-style:none;
+    text-align: left;
+    line-height: 1.2;
+}
+div ul li {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* ** mobile */
+
+@media screen and (max-width: 680px){
+    ul.topnav li/*:not(:nth-child(1))*/{
+        display:none;
+    }
+    ul.topnav li.dropdownIcon {
+        display:block;
+        float:right;
+    }
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+    ul.topnav.responsive {
+        position: relative;
+        
+    }
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+        
+
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+       
+    }
+   h1.section2header{
+     font-size: 40px;
+   }
+
+   article p{
+    font-size: 25px;
+   }
+
+    .col-6,.col-4,.col-7,.col-5 {
+        width: 100%;
+        margin:0;
+
+    }
+    .col-3 {
+        width: 50%;
+        margin: 0;
+    }
+   div.slopeIcon {
+    margin: 10px;
+   }
+
+
+    div.slopeIcon img {
+        width:100;
+        
+
+    }
+    
+    div.box{
+        padding:5px;
+        display: block;
+    }
+
+    div.leftside-col,
+    div.rightside-col {
+        margin: 15px;
+    }
+    input[type="text"]{
+        width:300px;
+    }
+    .videocontainer iframe{
+        position: relative;
+        width:100%;
+        margin:0;
+        overflow: hidden;
+    }
+
+
+
+}
+
